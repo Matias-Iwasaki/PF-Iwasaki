@@ -108,41 +108,7 @@ body{
     resize: none;
 }
 
-
-
-/*
-
-.contact-container {
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    color: white;
-    font-size: 1.5rem;
-    background-image: url(../assets/correo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.contact-container__text{
-    text-align: center;
-}
-.contact-container__title{
-    font-size: 3rem;
-}
-.contact-container__form{
-    text-align: center;
-    width: 50%;
-    padding: 25px;
-}
-.contact-container__campos{
-    width: 100%;
-    resize: none;
-}
-
-*/
+/* Estilos para la seccion "Trayectoria" */
 
 .career-container{
     min-height: 800px;
@@ -163,13 +129,27 @@ body{
     font-weight: 150;
     text-align: center;
 }
+.career-card{
+    opacity: 90%;
+}
 
 
 
+/* Estilos para la seccion "Proyectos" */
 
+.project-container__mobile{
+    min-height: 600px;
+    color: black;
+    background-image: url(../assets/proyectos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilos para la seccion "Sobre Mi" */
 
 /*Mediaqueries*/
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     .main-container{
         margin: 200px 0px;
         height: 600px;
@@ -194,11 +174,12 @@ body{
 
     .main-container__link{
         font-size: 3rem;
+        transition: color 0.7s;
     }
 
     .main-container__link:hover{
         font-weight: 600;
-        text-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
+        color: #26858B;
     }
     
     
@@ -230,11 +211,35 @@ body{
     }
 
     
-
+    /* Mediaqueries para la seccion TRAYECTORIA*/
 
 
     .career-container{
         margin: 200px 0;
         min-height: 600px;
     }
+
+    .career-card{
+        opacity: 70%;
+        transition: opacity 1s;
+    }
+    .career-card:hover{
+        opacity: 100%;
+    }
+
+    /*Mediaqueries para la seccion PROYECTOS*/
+    .project-container__mobile{
+        min-height: 600px;
+        margin: 200px 0;
+    }
+    .github-link{
+        text-decoration: none;
+        color: white;
+        transition: color 0.7s;
+    }
+    .github-link:hover{
+        font-weight: 600;
+        color: #26858B;
+    }
 }
+
