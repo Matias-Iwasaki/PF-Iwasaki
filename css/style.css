@@ -1,0 +1,240 @@
+body{
+    background-color: black;
+    transition: 0.3s;
+    font-family: 'Roboto' , sans-serif;
+    color: white;
+}
+/*Estilos para la barra de navegacion*/
+
+.navbar {
+    background-color: #26858B;
+}
+.nav-link__active{
+    font-weight: 700;
+}
+
+
+/*Estilos para el inicio*/
+
+.main-container{
+    height: 800px;
+    width: 100%;
+    background-image: url(../assets/fondoinicio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main-container__card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+.main-container__photo{
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: #26858B;
+    max-width: max-content;         /*VERRRRRR*/
+}
+
+.main-container__name{
+    font-size: 2.5rem;
+    font-weight: 450;
+}
+
+.main-container__text{
+    font-size: 2rem;
+    font-weight: 150;
+    text-align: center;
+}
+
+.main-container__link{
+    text-decoration: none;
+    font-weight: 400;
+    color: white;
+    font-size: 2rem;
+}
+
+
+/* Estilos para la seccion CORREO*/
+
+.contact-container {  
+    height: 800px;
+    background-image: url(../assets/correo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "contact-container__title"
+      "contact-container__text"
+      "contact-container__form";
+}
+  
+.contact-container__title { grid-area: contact-container__title; 
+    font-size: 2.5rem;
+    font-weight: 450;
+    margin: auto;
+}
+
+
+.contact-container__text { grid-area: contact-container__text; 
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+ 
+
+.contact-container__form { grid-area: contact-container__form; 
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+
+.contact-container__campos{
+    width: 100%;
+    resize: none;
+}
+
+
+
+/*
+
+.contact-container {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 1.5rem;
+    background-image: url(../assets/correo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-container__text{
+    text-align: center;
+}
+.contact-container__title{
+    font-size: 3rem;
+}
+.contact-container__form{
+    text-align: center;
+    width: 50%;
+    padding: 25px;
+}
+.contact-container__campos{
+    width: 100%;
+    resize: none;
+}
+
+*/
+
+.career-container{
+    min-height: 800px;
+    background-image: url(../assets/trayectoria.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+ .career-container__title{
+    font-size: 2.5rem;
+    font-weight: 450;
+    text-align: center;
+    padding: 25px 0;
+ }
+.career-container__parrafo{
+    font-size: 1.5rem;
+    font-weight: 150;
+    text-align: center;
+}
+
+
+
+
+
+/*Mediaqueries*/
+@media screen and (min-width: 767px) {
+    .main-container{
+        margin: 200px 0px;
+        height: 600px;
+        flex-direction: row;        
+    }
+    
+    .main-container__card{
+        width: 50%;
+        justify-content: center;
+    }
+
+
+    .main-container__name{
+        font-size: 3.5rem;
+    }
+   
+    .main-container__text{
+        font-size: 3rem;
+        padding: 50px;
+
+    }
+
+    .main-container__link{
+        font-size: 3rem;
+    }
+
+    .main-container__link:hover{
+        font-weight: 600;
+        text-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    
+    /*Mediaqueries para contacto*/
+    .contact-container {  
+        margin: 200px 0;
+        min-height: 600px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.75fr 1.25fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "contact-container__text contact-container__title"
+          "contact-container__text contact-container__form";
+      }
+      
+    .contact-container__text { grid-area: contact-container__text; 
+        font-size: 3rem;
+    }   
+      
+    .contact-container__title { grid-area: contact-container__title; 
+        font-size: 3.5rem;
+        
+    }
+      
+    .contact-container__form { grid-area: contact-container__form; 
+        
+    }
+
+    
+
+
+
+    .career-container{
+        margin: 200px 0;
+        min-height: 600px;
+    }
+}
