@@ -3,6 +3,7 @@ body{
     transition: 0.3s;
     font-family: 'Roboto' , sans-serif;
     color: white;
+    background:  linear-gradient(0deg, #26858B 0%, black 10%, black 90%, #26858B 100%);
 }
 /*Estilos para la barra de navegacion*/
 
@@ -12,8 +13,14 @@ body{
 .nav-link__active{
     font-weight: 700;
 }
-
-
+.main-title{
+    font-size: 2.5rem;
+    font-weight: 450;
+}
+.main-text{
+    font-size: 1.5rem;
+    font-weight: 150;
+}
 /*Estilos para el inicio*/
 
 .main-container{
@@ -41,17 +48,10 @@ body{
     border-radius: 50%;
     border: 2px solid;
     border-color: #26858B;
-    max-width: max-content;         /*VERRRRRR*/
-}
-
-.main-container__name{
-    font-size: 2.5rem;
-    font-weight: 450;
+    max-width: max-content;         
 }
 
 .main-container__text{
-    font-size: 2rem;
-    font-weight: 150;
     text-align: center;
 }
 
@@ -82,9 +82,8 @@ body{
       "contact-container__form";
 }
   
-.contact-container__title { grid-area: contact-container__title; 
-    font-size: 2.5rem;
-    font-weight: 450;
+.contact-container__title { 
+    grid-area: contact-container__title; 
     margin: auto;
 }
 
@@ -92,8 +91,6 @@ body{
 .contact-container__text { grid-area: contact-container__text; 
     margin: auto;
     text-align: center;
-    font-size: 1.5rem;
-
 }
  
 
@@ -125,8 +122,6 @@ body{
     padding: 25px 0;
  }
 .career-container__parrafo{
-    font-size: 1.5rem;
-    font-weight: 150;
     text-align: center;
 }
 .career-card{
@@ -147,6 +142,18 @@ body{
 }
 
 /* Estilos para la seccion "Sobre Mi" */
+
+.about-me-container{
+    max-height: 800px;
+    background-image: url(../assets/sobremi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
 
 /*Mediaqueries*/
 @media screen and (min-width: 768px) {
@@ -232,6 +239,7 @@ body{
         min-height: 600px;
         margin: 200px 0;
     }
+
     .github-link{
         text-decoration: none;
         color: white;
@@ -241,5 +249,13 @@ body{
         font-weight: 600;
         color: #26858B;
     }
+
+    /*Mediaqueries para la seccion SOBRE-MI*/
+
+    .about-me-container{
+        min-height: 600px;
+        margin: 200px 0;
+    }
+    
 }
 
