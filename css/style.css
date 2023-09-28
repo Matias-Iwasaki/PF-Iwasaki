@@ -3,7 +3,6 @@ body{
     transition: 0.3s;
     font-family: 'Roboto' , sans-serif;
     color: white;
-    background:  linear-gradient(0deg, #26858B 0%, black 10%, black 90%, #26858B 100%);
 }
 /*Estilos para la barra de navegacion*/
 
@@ -14,18 +13,17 @@ body{
     font-weight: 700;
 }
 .main-title{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 450;
 }
 .main-text{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 150;
 }
 /*Estilos para el inicio*/
 
 .main-container{
     height: 800px;
-    width: 100%;
     background-image: url(../assets/fondoinicio.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -36,11 +34,9 @@ body{
 }
 
 .main-container__card{
-    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: white;
     align-items: center;
 }
 
@@ -63,7 +59,7 @@ body{
 }
 
 
-/* Estilos para la seccion CORREO*/
+/* Estilos para la seccion CONTACTO*/
 
 .contact-container {  
     height: 800px;
@@ -140,11 +136,20 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.github-link{
+    text-decoration: none;
+    color: white;
+    transition: color 0.7s;
+}
+.github-link:hover{
+    font-weight: 600;
+    color: #26858B;
+}
 
 /* Estilos para la seccion "Sobre Mi" */
 
 .about-me-container{
-    max-height: 800px;
+    min-height: 800px;
     background-image: url(../assets/sobremi.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -152,11 +157,14 @@ body{
 }
 
 
-
-
-
 /*Mediaqueries*/
 @media screen and (min-width: 768px) {
+    body{
+        background:  linear-gradient(0deg, #26858B 0%, black 10%, black 90%, #26858B 100%);
+    }
+
+
+    /*Mediaqueries para el Inicio**/
     .main-container{
         margin: 200px 0px;
         height: 600px;
@@ -202,7 +210,7 @@ body{
         grid-template-areas:
           "contact-container__text contact-container__title"
           "contact-container__text contact-container__form";
-      }
+    }
       
     .contact-container__text { grid-area: contact-container__text; 
         font-size: 3rem;
@@ -240,22 +248,16 @@ body{
         margin: 200px 0;
     }
 
-    .github-link{
-        text-decoration: none;
-        color: white;
-        transition: color 0.7s;
-    }
-    .github-link:hover{
-        font-weight: 600;
-        color: #26858B;
-    }
 
     /*Mediaqueries para la seccion SOBRE-MI*/
 
     .about-me-container{
-        min-height: 600px;
+        max-height: 800px;
         margin: 200px 0;
     }
     
+    .footer-container__icons:hover{
+        color: #26858B;
+    }
 }
 
