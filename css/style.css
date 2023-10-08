@@ -121,6 +121,66 @@
     grid-area: contact-container__form;
   }
 }
+/* Estilos para la seccion "Trayectoria" */
+.career-container {
+  min-height: 800px;
+  background-image: url("../assets/trayectoria.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.career-container .career-container__title {
+  text-align: center;
+  padding: 25px 0;
+}
+.career-container .career-container__parrafo {
+  text-align: center;
+}
+.career-container .career-card {
+  opacity: 90%;
+}
+
+/*Mediaqueries*/
+@media screen and (min-width: 768px) {
+  /* Mediaqueries para la seccion TRAYECTORIA*/
+  .career-container {
+    margin: 120px 0;
+    min-height: 600px;
+  }
+  .career-container .career-card {
+    opacity: 70%;
+    transition: opacity 1.2s;
+  }
+  .career-container .career-card:hover {
+    opacity: 100%;
+  }
+}
+/* Estilos para la seccion "Proyectos" */
+.project-container__mobile {
+  height: 800px;
+  background-image: url("../assets/proyectos.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.github-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.7s;
+}
+
+/*Mediaqueries*/
+@media screen and (min-width: 768px) {
+  .project-container__mobile {
+    margin: 120px 0;
+    min-height: 600px;
+  }
+  .github-link:hover {
+    font-weight: 600;
+    color: #26858f;
+  }
+}
 body {
   background-color: black;
   font-family: "Raleway", sans-serif;
