@@ -1,0 +1,30 @@
+    /* Estilos para la seccion "Proyectos" */
+    
+    .project-container__mobile{
+        min-height: 600px;
+        color: black;
+        background-image: url(../assets/proyectos.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .github-link{
+        text-decoration: none;
+        color: white;
+        transition: color 0.7s;
+    }
+    .github-link:hover{
+        font-weight: 600;
+        color: #26858B;
+    }
+    
+    /*Mediaqueries*/
+    @media screen and (min-width: 768px) {
+                        
+        /*Mediaqueries para la seccion PROYECTOS*/
+        .project-container__mobile{
+            min-height: 600px;
+            margin: 200px 0;
+        }
+    
+    }

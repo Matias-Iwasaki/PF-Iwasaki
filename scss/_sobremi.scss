@@ -1,0 +1,24 @@
+    /* Estilos para la seccion "Sobre Mi" */
+    
+    .about-me-container{
+        min-height: 800px;
+        background-image: url(../assets/sobremi.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    /*Mediaqueries*/
+    @media screen and (min-width: 768px) {
+                            
+        /*Mediaqueries para la seccion SOBRE-MI*/
+    
+        .about-me-container{
+            max-height: 800px;
+            margin: 200px 0;
+        }
+        
+        .footer-container__icons:hover{
+            color: #26858B;
+        }
+    }

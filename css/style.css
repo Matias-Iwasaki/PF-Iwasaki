@@ -1,263 +1,148 @@
-body{
-    background-color: black;
-    transition: 0.3s;
-    font-family: 'Roboto' , sans-serif;
-    color: white;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+.main-container {
+  height: 800px;
+  background-image: url("../assets/fondoinicio.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-/*Estilos para la barra de navegacion*/
-
-.navbar {
-    background-color: #26858B;
+.main-container .main-container__card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
-.nav-link__active{
-    font-weight: 700;
+.main-container .main-container__card .main-container__photo {
+  border-radius: 50%;
+  border: 2px solid;
+  border-color: #26858f;
+  max-width: max-content;
 }
-.main-title{
-    font-size: 3rem;
-    font-weight: 450;
+.main-container .main-container__card .main-container__text {
+  text-align: center;
 }
-.main-text{
-    font-size: 2rem;
-    font-weight: 150;
+.main-container .main-container__card .main-container__text .text-color {
+  color: #26858f;
 }
-/*Estilos para el inicio*/
-
-.main-container{
-    height: 800px;
-    background-image: url(../assets/fondoinicio.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.main-container .main-container__card .main-container__link {
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+  font-size: 2rem;
 }
-
-.main-container__card{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-.main-container__photo{
-    border-radius: 50%;
-    border: 2px solid;
-    border-color: #26858B;
-    max-width: max-content;         
-}
-
-.main-container__text{
-    text-align: center;
-}
-
-.main-container__link{
-    text-decoration: none;
-    font-weight: 400;
-    color: white;
-    font-size: 2rem;
-}
-
-
-/* Estilos para la seccion CONTACTO*/
-
-.contact-container {  
-    height: 800px;
-    background-image: url(../assets/correo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.5fr 2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "contact-container__title"
-      "contact-container__text"
-      "contact-container__form";
-}
-  
-.contact-container__title { 
-    grid-area: contact-container__title; 
-    margin: auto;
-}
-
-
-.contact-container__text { grid-area: contact-container__text; 
-    margin: auto;
-    text-align: center;
-}
- 
-
-.contact-container__form { grid-area: contact-container__form; 
-    text-align: center;
-    width: 75%;
-    margin: auto;
-}
-
-.contact-container__campos{
-    width: 100%;
-    resize: none;
-}
-
-/* Estilos para la seccion "Trayectoria" */
-
-.career-container{
-    min-height: 800px;
-    background-image: url(../assets/trayectoria.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
- .career-container__title{
-    font-size: 2.5rem;
-    font-weight: 450;
-    text-align: center;
-    padding: 25px 0;
- }
-.career-container__parrafo{
-    text-align: center;
-}
-.career-card{
-    opacity: 90%;
-}
-
-
-
-/* Estilos para la seccion "Proyectos" */
-
-.project-container__mobile{
-    min-height: 600px;
-    color: black;
-    background-image: url(../assets/proyectos.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.github-link{
-    text-decoration: none;
-    color: white;
-    transition: color 0.7s;
-}
-.github-link:hover{
-    font-weight: 600;
-    color: #26858B;
-}
-
-/* Estilos para la seccion "Sobre Mi" */
-
-.about-me-container{
-    min-height: 800px;
-    background-image: url(../assets/sobremi.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 
 /*Mediaqueries*/
 @media screen and (min-width: 768px) {
-    body{
-        background:  linear-gradient(0deg, #26858B 0%, black 10%, black 90%, #26858B 100%);
-    }
-
-
-    /*Mediaqueries para el Inicio**/
-    .main-container{
-        margin: 200px 0px;
-        height: 600px;
-        flex-direction: row;        
-    }
-    
-    .main-container__card{
-        width: 50%;
-        justify-content: center;
-    }
-
-
-    .main-container__name{
-        font-size: 3.5rem;
-    }
-   
-    .main-container__text{
-        font-size: 3rem;
-        padding: 50px;
-
-    }
-
-    .main-container__link{
-        font-size: 3rem;
-        transition: color 0.7s;
-    }
-
-    .main-container__link:hover{
-        font-weight: 600;
-        color: #26858B;
-    }
-    
-    
-    /*Mediaqueries para contacto*/
-    .contact-container {  
-        margin: 200px 0;
-        min-height: 600px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.75fr 1.25fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "contact-container__text contact-container__title"
-          "contact-container__text contact-container__form";
-    }
-      
-    .contact-container__text { grid-area: contact-container__text; 
-        font-size: 3rem;
-    }   
-      
-    .contact-container__title { grid-area: contact-container__title; 
-        font-size: 3.5rem;
-        
-    }
-      
-    .contact-container__form { grid-area: contact-container__form; 
-        
-    }
-
-    
-    /* Mediaqueries para la seccion TRAYECTORIA*/
-
-
-    .career-container{
-        margin: 200px 0;
-        min-height: 600px;
-    }
-
-    .career-card{
-        opacity: 70%;
-        transition: opacity 1s;
-    }
-    .career-card:hover{
-        opacity: 100%;
-    }
-
-    /*Mediaqueries para la seccion PROYECTOS*/
-    .project-container__mobile{
-        min-height: 600px;
-        margin: 200px 0;
-    }
-
-
-    /*Mediaqueries para la seccion SOBRE-MI*/
-
-    .about-me-container{
-        max-height: 800px;
-        margin: 200px 0;
-    }
-    
-    .footer-container__icons:hover{
-        color: #26858B;
-    }
+  .main-container {
+    margin: 120px 0;
+    min-height: 600px;
+    flex-direction: row;
+  }
+  .main-container .main-container__card {
+    width: 50%;
+    justify-content: center;
+  }
+  .main-container .main-container__card .main-container__name {
+    font-size: 3.5rem;
+  }
+  .main-container .main-container__card .main-container__text {
+    font-size: 3rem;
+    padding: 50px;
+  }
+  .main-container .main-container__card .main-container__link {
+    font-size: 3rem;
+    transition: color 0.7s;
+  }
+  .main-container .main-container__card .main-container__link:hover {
+    font-weight: 600;
+    color: #26858f;
+  }
+}
+/* Estilos para la seccion CONTACTO*/
+.contact-container {
+  height: 800px;
+  background-image: url("../assets/contacto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr 2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "contact-container__title" "contact-container__text" "contact-container__form";
+}
+.contact-container .contact-container__title {
+  grid-area: contact-container__title;
+  margin: auto;
+}
+.contact-container .contact-container__text {
+  grid-area: contact-container__text;
+  margin: auto;
+  text-align: center;
+}
+.contact-container .contact-container__form {
+  grid-area: contact-container__form;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}
+.contact-container .contact-container__campos {
+  width: 100%;
+  resize: none;
+  border-radius: 5px;
+  margin: 2px;
 }
 
+/*Mediaqueries*/
+@media screen and (min-width: 768px) {
+  .contact-container {
+    margin: 200px 0;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.75fr 1.25fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "contact-container__text contact-container__title" "contact-container__text contact-container__form";
+  }
+  .contact-container__text {
+    grid-area: contact-container__text;
+    font-size: 3rem;
+  }
+  .contact-container__title {
+    grid-area: contact-container__title;
+    font-size: 3.5rem;
+  }
+  .contact-container__form {
+    grid-area: contact-container__form;
+  }
+}
+body {
+  background-color: black;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+/*Estilos para la barra de navegacion*/
+.navbar {
+  background-color: #26858f;
+}
+.navbar .nav-link__active {
+  font-weight: 700;
+}
+
+/*Mediaqueries para la barra de navegacion*/
+@media screen and (min-width: 768px) {
+  body {
+    background: linear-gradient(0deg, #26858f 0%, black 15%, black 85%, #26858f 100%);
+  }
+  .navbar {
+    background-color: transparent;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

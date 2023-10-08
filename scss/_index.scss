@@ -1,0 +1,56 @@
+.main-container{
+    height: $mobile-height;
+    @include background-img ('../assets/fondoinicio.jpg');
+    @include flex-col;
+    justify-content: space-evenly;
+    .main-container__card{
+        @include flex-col;
+        text-align: center;
+        align-items: center;
+        .main-container__photo{
+            border-radius: 50%;
+                border: 2px solid;
+                border-color: $color-principal;
+                max-width: max-content;
+        }
+        .main-container__text{
+            text-align: center;
+            .text-color{
+                color: $color-principal;
+            }
+        }
+        .main-container__link{
+            text-decoration: none;
+            font-weight: 400;
+            color: white;
+            font-size: 2rem;
+        }
+    }
+}
+
+/*Mediaqueries*/
+@media screen and (min-width: 768px) {
+    .main-container{
+        @include desktop-size;
+        flex-direction: row;
+        .main-container__card{
+            width: 50%;
+            justify-content: center;
+            .main-container__name{
+                font-size: 3.5rem;
+            }
+            .main-container__text{
+                font-size: 3rem;
+                padding: 50px;
+            }
+            .main-container__link{
+                font-size: 3rem;
+                transition: color 0.7s;
+                &:hover{
+                    font-weight: 600;
+                    color: $color-principal;
+                }
+            }
+        }
+    }
+}

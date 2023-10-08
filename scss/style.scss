@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+@import 'variables';
+@import 'mixins';
+@import 'index';
+@import 'contact';
+
+body{
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+/*Estilos para la barra de navegacion*/
+
+.navbar {
+    background-color: $color-principal;
+    .nav-link__active
+        {font-weight: 700;
+        }
+    }
+
+/*Mediaqueries para la barra de navegacion*/
+    @media screen and (min-width: 768px) {
+        body{
+            background:  linear-gradient(0deg, $color-principal 0%, black 15%, black 85%, $color-principal 100%);
+        }
+        .navbar{
+            background-color: transparent;
+        }
+    }
+
