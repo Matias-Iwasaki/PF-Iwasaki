@@ -100,7 +100,7 @@
 /*Mediaqueries*/
 @media screen and (min-width: 768px) {
   .contact-container {
-    margin: 200px 0;
+    margin: 120px 0;
     min-height: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -181,6 +181,31 @@
     color: #26858f;
   }
 }
+/* Estilos para la seccion "Sobre Mi" */
+.about-me-container {
+  height: 800px;
+  background-image: url("../assets/sobremi.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-me-container .download-buttom {
+  background-color: #26858f;
+  border: none;
+}
+.about-me-container .barra-de-progreso {
+  opacity: 80%;
+  background-color: #0ed;
+}
+
+/*Mediaqueries*/
+@media screen and (min-width: 768px) {
+  /*Mediaqueries para la seccion SOBRE-MI*/
+  .about-me-container {
+    margin: 120px 0;
+    min-height: 600px;
+  }
+}
 body {
   background-color: black;
   font-family: "Raleway", sans-serif;
@@ -202,6 +227,9 @@ body {
   }
   .navbar {
     background-color: transparent;
+  }
+  .footer-container__icons:hover {
+    color: #26858f;
   }
 }
 

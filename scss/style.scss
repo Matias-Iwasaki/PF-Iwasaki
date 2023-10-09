@@ -6,6 +6,7 @@
 @import 'contact';
 @import 'trayectoria';
 @import 'proyectos';
+@import 'sobremi';
 
 body{
     background-color: black;
@@ -29,6 +30,9 @@ body{
         }
         .navbar{
             background-color: transparent;
+        }
+        .footer-container__icons:hover{
+            color: $color-principal;
         }
     }
 

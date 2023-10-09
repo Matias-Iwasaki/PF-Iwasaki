@@ -1,24 +1,27 @@
     /* Estilos para la seccion "Sobre Mi" */
     
     .about-me-container{
-        min-height: 800px;
-        background-image: url(../assets/sobremi.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        height: $mobile-height;
+        @include background-img('../assets/sobremi.jpg');
+        .download-buttom{
+            background-color: $color-principal;
+            border: none;
+        }
+    .barra-de-progreso{
+        opacity: 80%;
+        background-color: #0ed;
+    }
+
     }
     
+
+
     /*Mediaqueries*/
     @media screen and (min-width: 768px) {
                             
         /*Mediaqueries para la seccion SOBRE-MI*/
     
         .about-me-container{
-            max-height: 800px;
-            margin: 200px 0;
-        }
-        
-        .footer-container__icons:hover{
-            color: #26858B;
+            @include desktop-size;
         }
     }
