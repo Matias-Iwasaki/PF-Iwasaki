@@ -27,7 +27,9 @@
     <header>
       <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
-          <a class="navbar-brand text-light ps-4 fs-2" href="../index.html">M.I.WEB</a>
+          <a class="navbar-brand text-light ps-4 fs-2" href="../index.html"
+            >M.I.WEB</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -42,19 +44,38 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link text-light px-3 fs-5" href="../index.html">Inicio</a>
+                <a class="nav-link text-light px-3 fs-5" href="../index.html"
+                  >Inicio</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light px-3 fs-5 nav-link__active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                <a
+                  class="nav-link text-light px-3 fs-5 nav-link__active"
+                  aria-current="page"
+                  href="../pages/contacto.html"
+                  >Contacto</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light px-3 fs-5" href="../pages/trayectoria.html">Trayectoria</a>
+                <a
+                  class="nav-link text-light px-3 fs-5"
+                  href="../pages/trayectoria.html"
+                  >Trayectoria</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light px-3 fs-5" href="../pages/proyectos.html">Proyectos</a>
+                <a
+                  class="nav-link text-light px-3 fs-5"
+                  href="../pages/proyectos.html"
+                  >Proyectos</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light px-3 fs-5" href="../pages/sobremi.html">Sobre Mi</a>
+                <a
+                  class="nav-link text-light px-3 fs-5"
+                  href="../pages/sobremi.html"
+                  >Sobre Mi</a
+                >
               </li>
             </ul>
           </div>
@@ -64,21 +85,53 @@
     <!--Formulario de contacto-->
     <main>
       <section class="contact-container">
-        <p class="contact-container__text main-text">Ponete en contacto conmigo para hablar sobre tu proyecto!</p>
         <h1 class="contact-container__title main-title">Contacto</h1>
-        <form action="#" class="contact-container__form">
-          <div><input type="text" class="contact-container__campos" placeholder="Ingrese su nombre y apellido" /></div>
-          <div><input type="text" class="contact-container__campos" placeholder="Ingrese su número de telefono" /></div>
-          <div><input type="email" class="contact-container__campos" placeholder="Ingrese su correo electrónico" /></div>
-          <div><textarea
-            class="contact-container__campos"
-            name="Mensaje"
-            cols="30"
-            rows="10"
-            placeholder="Escriba su mensaje"
-          ></textarea></div>
-          <div><input class="contact-container__campos" type="submit" /></div>
-        </form>
+        <h2 class="contact-container__text main-text">
+          Ponete en contacto conmigo para hablar sobre tu proyecto!
+        </h2>
+        <div class="contact-container__info">
+          <h3>Medios de contacto</h3>
+          <p>
+            E-mail: <b>matiiwasaki@gmail.com</b><br />
+            Whatsapp: <b>+54 9 01-2345-6789</b>
+          </p>
+        </div>
+        <div class="contact-container__form">
+          <h3>Envíame un mensaje</h3>
+          <form action="#">
+            <div>
+              <input
+                type="text"
+                class="contact-container__campos"
+                placeholder="Ingrese su nombre y apellido"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                class="contact-container__campos"
+                placeholder="Ingrese su número de telefono"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                class="contact-container__campos"
+                placeholder="Ingrese su correo electrónico"
+              />
+            </div>
+            <div>
+              <textarea
+                class="contact-container__campos"
+                name="Mensaje"
+                cols="30"
+                rows="10"
+                placeholder="Como puedo ayudarte?"
+              ></textarea>
+            </div>
+            <div><input class="contact-container__submit" type="submit" /></div>
+          </form>
+        </div>
       </section>
     </main>
     <!--Footer-->
@@ -86,10 +139,30 @@
       <div class="container-fluid text-center bg-dark">
         <div class="row text-light">
           <div class="col-12">
-            <a href="https://instagram.com" class="text-light px-3 fs-3"><i class="bx bxl-instagram footer-container__icons"></i></a>
-            <a href="https://youtube.com" class="text-light px-3 fs-3"><i class="bx bxl-youtube footer-container__icons"></i></a>
-            <a href="https://facebook.com" class="text-light px-3 fs-3"><i class="bx bxl-facebook-circle footer-container__icons"></i></a>
-            <a href="https://linkedin.com" class="text-light px-3 fs-3"><i class="bx bxl-linkedin footer-container__icons"></i></a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="text-light px-3 fs-3"
+              ><i class="bx bxl-instagram footer-container__icons"></i
+            ></a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              class="text-light px-3 fs-3"
+              ><i class="bx bxl-youtube footer-container__icons"></i
+            ></a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="text-light px-3 fs-3"
+              ><i class="bx bxl-facebook-circle footer-container__icons"></i
+            ></a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              class="text-light px-3 fs-3"
+              ><i class="bx bxl-linkedin footer-container__icons"></i
+            ></a>
           </div>
           <div class="col-12">
             <h2 class="footer-container__copyright fs-6">

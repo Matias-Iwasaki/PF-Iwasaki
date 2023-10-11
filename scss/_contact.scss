@@ -5,29 +5,41 @@
     @include background-img ('../assets/contacto.jpg');
     display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.5fr 2fr;
+        grid-template-rows: 1fr 0.5fr 1fr 1.5fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
           "contact-container__title"
           "contact-container__text"
+          "contact-container__info"
           "contact-container__form";
         .contact-container__title { 
             grid-area: contact-container__title; 
             margin: auto; }
-        .contact-container__text { grid-area: contact-container__text; 
-            margin: auto;
+        .contact-container__text{ grid-area: contact-container__text; 
+            margin: 20px auto;
             text-align: center;}  
+        .contact-container__info{ grid-area: contact-container__info;
+            margin: 20px auto;}
         .contact-container__form { grid-area: contact-container__form; 
             text-align: center;
             width: 75%;
-            margin: auto;} 
+            margin: 20px auto;} 
             .contact-container__campos{
                 width: 100%;
                 resize: none;
-                border-radius: 5px;
+                border: 2px solid $color-principal;
                 margin: 2px;
+                opacity: 70%;
+                transition: opacity 0.7s;
+                &:focus{
+                    opacity: 100%;
+                }
             }    
+            .contact-container__submit{
+                background-image: linear-gradient(90deg, #0ef, $color-principal);
+                width: 50%;
+            }
 }
 
 /*Mediaqueries*/
@@ -36,20 +48,24 @@
         @include desktop-size;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.75fr 1.25fr;
+        grid-template-rows: repeat(3,1fr);
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-          "contact-container__text contact-container__title"
-          "contact-container__text contact-container__form";}
+          "contact-container__title contact-container__title"
+          "contact-container__text contact-container__form"
+          "contact-container__info contact-container__form";}
         .contact-container__text { 
             grid-area: contact-container__text; 
             font-size: 3rem;
             }
         .contact-container__title { 
             grid-area: contact-container__title; 
-            font-size: 3.5rem;
+            font-size: 2rem;
             }
+        .contact-container__info{ 
+            grid-area: contact-container__info;
+            font-size: 1.5rem;}
         .contact-container__form { 
             grid-area: contact-container__form;     
             }
