@@ -15,13 +15,13 @@
     }
 
     /*Mediaqueries*/
-    @media screen and (min-width: 768px) {
+    @include desktop{
                     
         /* Mediaqueries para la seccion TRAYECTORIA*/
     
     
         .career-container{
-            @include desktop-size;
+            @include main-size;
             .career-card{
                 opacity: 70%;
                 transition: opacity 1.2s;

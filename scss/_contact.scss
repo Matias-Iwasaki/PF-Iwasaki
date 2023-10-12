@@ -23,7 +23,7 @@
             margin: 20px auto;}
         .contact-container__form { grid-area: contact-container__form; 
             text-align: center;
-            width: 75%;
+            width: 70%;
             margin: 20px auto;} 
             .contact-container__campos{
                 width: 100%;
@@ -36,16 +36,12 @@
                     opacity: 100%;
                 }
             }    
-            .contact-container__submit{
-                background-image: linear-gradient(90deg, #0ef, $color-principal);
-                width: 50%;
-            }
 }
 
 /*Mediaqueries*/
-@media screen and (min-width: 768px) {
+@include desktop{
     .contact-container {  
-        @include desktop-size;
+        @include main-size;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3,1fr);

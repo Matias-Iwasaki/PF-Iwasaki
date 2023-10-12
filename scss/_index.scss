@@ -29,9 +29,9 @@
 }
 
 /*Mediaqueries*/
-@media screen and (min-width: 768px) {
+@include desktop{
     .main-container{
-        @include desktop-size;
+        @include main-size;
         flex-direction: row;
         .main-container__card{
             width: 50%;

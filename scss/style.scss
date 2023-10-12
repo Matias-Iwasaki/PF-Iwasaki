@@ -23,8 +23,24 @@ body{
         }
     }
 
+    .main-title{
+        @include title-h1;
+    }
+    .subtitles{
+        @include title-h2;
+    }
+    .main.text{
+        @include parrafo;
+    }
+
+    .download-buttom{
+        background-image: linear-gradient(90deg, #0ef, $color-principal);
+        width: 50%;
+    }
+
+    
 /*Mediaqueries para la barra de navegacion*/
-    @media screen and (min-width: 768px) {
+    @include desktop {
         body{
             background:  linear-gradient(0deg, $color-principal 0%, black 15%, black 85%, $color-principal 100%);
         }

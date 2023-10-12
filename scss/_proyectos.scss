@@ -2,8 +2,8 @@
 
     .project-container__mobile{
         height: $mobile-height;
-        @include background-img ('../assets/proyectos.jpg');
-        }
+        @include background-img ('../assets/proyectos.jpg');    
+    }
     .github-link{
         text-decoration: none;
         color: white;
@@ -12,9 +12,9 @@
     
 
      /*Mediaqueries*/
-     @media screen and (min-width: 768px) {
+     @include desktop{
         .project-container__mobile{
-            @include desktop-size;
+            @include main-size;
         }
         .github-link:hover{
             font-weight: 600;
