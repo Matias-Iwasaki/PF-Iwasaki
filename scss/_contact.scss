@@ -1,7 +1,7 @@
 /* Estilos para la seccion CONTACTO*/
 
 .contact-container{
-    height: $mobile-height;
+    min-height: $mobile-height;
     @include background-img ('../assets/contacto.jpg');
     display: grid;
         grid-template-columns: 1fr;

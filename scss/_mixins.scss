@@ -23,7 +23,7 @@
     border-bottom: 1px solid $color-principal;
 }
 @mixin title-h2{
-    display: inline;
+    display: inline-block;
     font-size: 2.5rem;
     font-weight: 400;
 }

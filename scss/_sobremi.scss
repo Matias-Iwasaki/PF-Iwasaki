@@ -1,15 +1,19 @@
     /* Estilos para la seccion "Sobre Mi" */
     
     .about-me-container{
-        height: $mobile-height;
+        min-height: $mobile-height;
         @include background-img('../assets/sobremi.jpg');
         .download-buttom{
             background-color: $color-principal;
             border: none;
+            a{
+                text-decoration: none;
+                color: white;
+            }
         }
     .barra-de-progreso{
         opacity: 80%;
-        background-color: #0ed;
+        background-color: $color-secundario;
     }
 
     }

@@ -34,8 +34,7 @@ body{
     }
 
     .download-buttom{
-        background-image: linear-gradient(90deg, #0ef, $color-principal);
-        width: 50%;
+        background-image: linear-gradient(90deg, $color-secundario, $color-principal);
     }
 
     
