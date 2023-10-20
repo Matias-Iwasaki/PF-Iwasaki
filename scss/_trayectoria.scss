@@ -11,6 +11,10 @@
             text-align: center;}
         .career-card{
                 opacity: 90%;
+                max-width: 500px;
+                .card-photo{
+                    max-height: 250px;
+                }
         }
     }
 

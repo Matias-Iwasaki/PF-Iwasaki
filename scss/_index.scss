@@ -15,15 +15,14 @@
         }
         .main-container__text{
             text-align: center;
-            .text-color{
+            .different-color{
                 color: $color-principal;
             }
         }
         .main-container__link{
+            @extend .main-container__text;   
             text-decoration: none;
-            font-weight: 400;
             color: white;
-            font-size: 2rem;
         }
     }
 }

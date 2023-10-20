@@ -2,52 +2,10 @@
 
 @import 'variables';
 @import 'mixins';
+@import 'maps';
+@import 'body';
 @import 'index';
 @import 'contact';
 @import 'trayectoria';
 @import 'proyectos';
 @import 'sobremi';
-
-body{
-    background-color: black;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-}
-
-/*Estilos para la barra de navegacion*/
-
-.navbar {
-    background-color: $color-principal;
-    .nav-link__active
-        {font-weight: 700;
-        }
-    }
-
-    .main-title{
-        @include title-h1;
-    }
-    .subtitles{
-        @include title-h2;
-    }
-    .main.text{
-        @include parrafo;
-    }
-
-    .download-buttom{
-        background-image: linear-gradient(90deg, $color-secundario, $color-principal);
-    }
-
-    
-/*Mediaqueries para la barra de navegacion*/
-    @include desktop {
-        body{
-            background:  linear-gradient(0deg, $color-principal 0%, black 15%, black 85%, $color-principal 100%);
-        }
-        .navbar{
-            background-color: transparent;
-        }
-        .footer-container__icons:hover{
-            color: $color-principal;
-        }
-    }
-
