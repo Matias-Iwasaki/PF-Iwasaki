@@ -8,10 +8,10 @@
         text-align: center;
         align-items: center;
         .main-container__photo{
-            border-radius: 50%;
+            border-radius:  50%;
                 border: 2px solid;
                 border-color: $color-principal;
-                max-width: max-content;
+                max-width: 250px;
         }
         .main-container__text{
             text-align: center;

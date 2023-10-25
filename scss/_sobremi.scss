@@ -11,11 +11,13 @@
                 color: white;
             }
         }
+    .progress-bar{
+        width: 75%;
+    }  
     .barra-de-progreso{
-        opacity: 80%;
+        opacity: 70%;
         background-color: $color-secundario;
     }
-
     }
     
 
