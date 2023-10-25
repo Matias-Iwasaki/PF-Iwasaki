@@ -1,6 +1,9 @@
 # Portfolio - Proyecto Final 
 Portfolio realizado para el curso de desarrollo web en Coder House.
 
+# Información
+El propósito de esta pagina es presentar mi información academica, mi perfil y experiencias obtenidas en la programación.
+
 # Tecnologías
 * HTML5
 * CSS3
