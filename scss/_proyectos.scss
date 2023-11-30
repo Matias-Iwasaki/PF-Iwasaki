@@ -2,6 +2,7 @@
 
     .project-container__mobile{
         height: $mobile-height;
+        margin: 0;
         @include background-img ('../assets/proyectos.jpg');    
     }
     .github-link{

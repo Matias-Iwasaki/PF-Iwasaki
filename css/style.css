@@ -173,6 +173,7 @@
 /* Estilos para la seccion "Proyectos" */
 .project-container__mobile {
   height: 800px;
+  margin: 0;
   background-image: url("../assets/proyectos.jpg");
   background-position: center;
   background-repeat: no-repeat;
