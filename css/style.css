@@ -213,12 +213,18 @@
   text-decoration: none;
   color: white;
 }
-.about-me-container .progress-bar {
-  width: 75%;
+
+.competencias {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "html css" "sass boot";
 }
-.about-me-container .barra-de-progreso {
-  opacity: 70%;
-  background-color: #0ef;
+.competencias .logos {
+  height: 125px;
+  width: 125px;
 }
 
 /*Mediaqueries*/
@@ -227,6 +233,10 @@
   .about-me-container {
     margin: 120px 0;
     min-height: 600px;
+  }
+  .competencias {
+    display: flex;
+    justify-content: space-around;
   }
 }
 /*Estilos generales*/

@@ -11,13 +11,20 @@
                 color: white;
             }
         }
-    .progress-bar{
-        width: 75%;
-    }  
-    .barra-de-progreso{
-        opacity: 70%;
-        background-color: $color-secundario;
     }
+    .competencias{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "html css"
+          "sass boot"; 
+        .logos{
+            height: 125px;
+            width: 125px;
+        }
     }
     
 
@@ -29,5 +36,9 @@
     
         .about-me-container{
             @include main-size;
+        }
+        .competencias{    
+            display: flex;
+            justify-content: space-around;
         }
     }
